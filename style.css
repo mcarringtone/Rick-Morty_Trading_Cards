@@ -8,7 +8,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252a;
+}
+body {
+  background: #24252a;
+  padding: 50px;
 }
 
 *::before,
@@ -63,11 +66,12 @@ button:hover {
 }
 /* end of nav bar */
 
-.card-container {
+.container-fluid {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 100px;
 }
 
 .card {
@@ -91,23 +95,20 @@ button:hover {
 .card .card-image {
   height: 150px;
   width: 150px;
-  border: 5px double #022a3c;
+  border: 5px solid #0a86c0;
   border-radius: 50%;
-  background-position: center;
-  background-size: cover;
 }
 
 .card .card-group {
   height: 150px;
   width: 150px;
-  border: 5px double green;
+  border: 5px double rgb(151, 176, 151);
   border-radius: 50%;
   background-size: cover;
 }
 
 .card .card-title {
-  padding: 20px 10px;
+  padding: 5px 10px;
   font-size: 1.5rem;
   text-transform: uppercase;
-  text-shadow: 1px 0px;
 }
